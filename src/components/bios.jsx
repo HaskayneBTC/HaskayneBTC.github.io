@@ -29,9 +29,11 @@ class Bios extends Component {
 			<section id="bios">
 				<h1 className="display-6">Meet the Exec Team</h1>
 				{this.state.bios
-					.map(b => <Bio bio={b} />)
+					.map(b => <Bio key={b.id} bio={b} />)
 					.reduce((accu, elem) => {
-						return accu === null ? [elem] : [...accu, <hr />, elem];
+						return accu === null
+							? [elem]
+							: [...accu, <hr key={"hr" + elem.id} />, elem];
 					}, null)}
 			</section>
 		);

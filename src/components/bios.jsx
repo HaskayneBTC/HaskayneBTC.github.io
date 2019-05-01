@@ -27,7 +27,7 @@ class Bios extends Component {
 	render() {
 		return (
 			<section id="bios">
-				<h1 className="display-6">Meet the Exec Team</h1>
+				<h1 className="display-6">Meet the Team</h1>
 				{this.state.bios
 					.map(b => <Bio key={b.id} bio={b} />)
 					.reduce((accu, elem) => {

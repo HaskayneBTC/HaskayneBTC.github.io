@@ -32,7 +32,7 @@ class Bio extends Component {
 
 		return (
 			<small className="text-muted">
-				&nbsp;-&nbsp;
+				&nbsp;&ndash;&nbsp;
 				{titles.reduce((accu, elem) => {
 					return accu === null ? [elem] : [...accu, ", ", elem];
 				}, null)}

@@ -6,6 +6,9 @@ class Home extends Component {
 	render() {
 		return (
 			<section id="home">
+				<br />
+				<br />
+				<br />
 				<Container>
 					<h1 className="display-4">
 						Connecting Innovation With People

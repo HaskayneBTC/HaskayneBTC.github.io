@@ -20,13 +20,13 @@ class Projects extends Component {
 			{
 				title: "Project 3",
 				img:
-					"http://boc.ie/clipart/post/i-0207b%20refinery%20-%20night.jpg",
+					"https://www.entrepreneurship-campus.org/wp-content/uploads/2016/06/weather-balloon4.jpg",
 				text: "A brief blurb about what this is"
 			},
 			{
 				title: "Project 4",
 				img:
-					"http://boc.ie/clipart/post/i-0207b%20refinery%20-%20night.jpg",
+					"https://www.todocanada.ca/wp-content/uploads/eveningincalgary-e1459307181708.jpg",
 				text: "A brief blurb about what this is"
 			},
 			{
@@ -43,9 +43,14 @@ class Projects extends Component {
 			}
 		]
 	};
+
 	render() {
 		return (
 			<section id="projects">
+				<br />
+				<br />
+				<br />
+				<h1 className="display-6">Projects</h1>
 				<CardDeck>{this.renderProjects()}</CardDeck>
 			</section>
 		);

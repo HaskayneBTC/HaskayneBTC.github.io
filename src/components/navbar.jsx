@@ -10,6 +10,10 @@ class NavBar extends Component {
 				text: "Home"
 			},
 			{
+				id: "projects",
+				text: "Projects"
+			},
+			{
 				id: "bios",
 				text: "Meet the Team"
 			}

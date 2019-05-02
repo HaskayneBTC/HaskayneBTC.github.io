@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Home from "./home.jsx";
 import Projects from "./projects.jsx";
 import Bios from "./bios.jsx";
+import Sponsors from "./sponsors.jsx";
 
 class Content extends Component {
 	state = {};
@@ -11,6 +12,7 @@ class Content extends Component {
 				<Home />
 				<Projects />
 				<Bios />
+				<Sponsors />
 			</div>
 		);
 	}

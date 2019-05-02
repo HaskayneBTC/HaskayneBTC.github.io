@@ -16,6 +16,10 @@ class NavBar extends Component {
 			{
 				id: "bios",
 				text: "Meet the Team"
+			},
+			{
+				id: "sponsors",
+				text: "Sponsors"
 			}
 		]
 	};

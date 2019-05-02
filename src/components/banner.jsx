@@ -26,7 +26,7 @@ class Banner extends Component {
 				<img
 					className="card-img"
 					src={imgUrl}
-					// alt="Business Technology Club"
+					alt=""
 					style={heroImgStyle}
 				/>
 				<div className="card-img-overlay">

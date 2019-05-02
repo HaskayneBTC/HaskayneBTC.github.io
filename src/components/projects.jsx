@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Project from "./project";
 import CardDeck from "react-bootstrap/CardDeck";
+import SectionTitle from "./sectionTitle.jsx";
 
 class Projects extends Component {
 	state = {
@@ -47,10 +48,7 @@ class Projects extends Component {
 	render() {
 		return (
 			<section id="projects">
-				<br />
-				<br />
-				<br />
-				<h1 className="display-6">Projects</h1>
+				<SectionTitle title="Projects" />
 				<CardDeck>{this.renderProjects()}</CardDeck>
 			</section>
 		);

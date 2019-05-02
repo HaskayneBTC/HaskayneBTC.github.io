@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Bio from "./bio.jsx";
+import SectionTitle from "./sectionTitle.jsx";
 
 class Bios extends Component {
 	state = {
@@ -27,10 +28,7 @@ class Bios extends Component {
 	render() {
 		return (
 			<section id="bios">
-				<br />
-				<br />
-				<br />
-				<h1 className="display-6">Meet the Team</h1>
+				<SectionTitle title="Meet the Team" />
 				{this.state.bios
 					.map(b => <Bio key={b.id} bio={b} />)
 					.reduce((accu, elem) => {

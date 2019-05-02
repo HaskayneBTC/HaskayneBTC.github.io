@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import Project from "./project";
 import CardDeck from "react-bootstrap/CardDeck";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 class Projects extends Component {
 	state = {
@@ -50,11 +47,6 @@ class Projects extends Component {
 		return (
 			<section id="projects">
 				<CardDeck>{this.renderProjects()}</CardDeck>
-
-				{/* <Container>
-					<Row>{this.renderProjects()}</Row>
-					<Row>{this.renderProjects()}</Row>
-				</Container> */}
 			</section>
 		);
 	}

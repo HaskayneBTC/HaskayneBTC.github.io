@@ -8,8 +8,6 @@ class Banner extends Component {
 		const imgUrl =
 			"https://onaircode.com/wp-content/uploads/2017/11/Particle-and-Node-Canvas.jpg";
 		const heroStyle = {
-			borderRadius: 0,
-			backgroundImage: "url(" + imgUrl + ")",
 			maxWidth: "100%",
 			maxHeight: "20vh"
 		};
@@ -17,11 +15,14 @@ class Banner extends Component {
 			overflow: "hidden",
 			objectFit: "cover",
 
-			backgroundColor: "#122"
+			backgroundColor: "#122" // Cool dark grey
 		};
 
 		return (
-			<div className="card bg-dark text-white" style={heroStyle}>
+			<div
+				className="card bg-dark text-white rounded-0"
+				style={heroStyle}
+			>
 				<img
 					className="card-img"
 					src={imgUrl}

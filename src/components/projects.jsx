@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Project from "./project";
-import CardDeck from "react-bootstrap/CardDeck";
 import SectionTitle from "./sectionTitle.jsx";
 
 class Projects extends Component {
@@ -49,7 +48,7 @@ class Projects extends Component {
 		return (
 			<section id="projects">
 				<SectionTitle title="Projects" />
-				<CardDeck>{this.renderProjects()}</CardDeck>
+				<div className="card-deck">{this.renderProjects()}</div>
 			</section>
 		);
 	}

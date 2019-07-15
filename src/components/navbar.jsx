@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 
 class NavBar extends Component {
 	state = {
@@ -25,17 +23,27 @@ class NavBar extends Component {
 	};
 	render() {
 		return (
-			<Navbar bg="dark" expand="lg" sticky="top" variant="dark">
-				<Nav>{this.renderNavLinks()}</Nav>
-			</Navbar>
+			// FIXME delete commented code
+			// <Navbar bg="dark" expand="lg" sticky="top" variant="dark">
+			// 	<Nav>{this.renderNavLinks()}</Nav>
+			// </Navbar>
+			<nav className="navbar navbar-dark bg-dark expand-lg sticky-top">
+				<ul className="navbar-nav">{this.renderNavLinks()}</ul>
+			</nav>
 		);
 	}
 
 	renderNavLinks() {
 		return this.state.navLinks.map(l => (
-			<Nav.Link key={l.id} href={"#" + l.id}>
-				{l.text}
-			</Nav.Link>
+			// FIXME delete commented code
+			// <Nav.Link key={l.id} href={"#" + l.id}>
+			// 	{l.text}
+			// </Nav.Link>
+			<li className="nav-item" key={l.id}>
+				<a className="nav-link" href={"#" + l.id}>
+					{l.text}
+				</a>
+			</li>
 		));
 	}
 }

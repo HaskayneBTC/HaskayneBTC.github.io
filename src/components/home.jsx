@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 class Home extends Component {
 	state = {};
@@ -11,21 +8,21 @@ class Home extends Component {
 				<br />
 				<br />
 				<br />
-				<Container>
-					<Row>
-						<Col md={5}>
+				<div className="container">
+					<div className="row">
+						<div className="col-5">
 							<h1 className="display-4">
 								Connecting Innovation With People
 							</h1>
 							<p className="text-muted">
 								Fill me in! A little more about who we are...
 							</p>
-						</Col>
-						<Col id="animation-col" md={7}>
+						</div>
+						<div id="animation-col" className="col-7">
 							<canvas id="canvas" />
-						</Col>
-					</Row>
-				</Container>
+						</div>
+					</div>
+				</div>
 				<canvas id="canvas" />
 			</section>
 		);

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Card from "react-bootstrap/Card";
 
 class Project extends Component {
 	render() {
@@ -10,22 +9,17 @@ class Project extends Component {
 		};
 
 		return (
-			<Card border="0" className="mb-4">
-				<Card.Img
-					variant="top"
+			<div className="card mb-4 border-0">
+				<img
+					className="card-img-top"
 					src={this.props.project.img}
 					style={cardImgStyle}
 				/>
-				<Card.Body>
-					<Card.Title>{this.props.project.title}</Card.Title>
-					<Card.Text>{this.props.project.text}</Card.Text>
-				</Card.Body>
-				<Card.Footer>
-					<small className="text-muted">
-						Last updated 3 mins ago
-					</small>
-				</Card.Footer>
-			</Card>
+				<div className="card-body">
+					<h5 className="card-title">{this.props.project.title}</h5>
+					<p className="card-text">{this.props.project.text}</p>
+				</div>
+			</div>
 		);
 	}
 }

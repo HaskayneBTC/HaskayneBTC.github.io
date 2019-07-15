@@ -27,9 +27,6 @@ class Home extends Component {
 					</Row>
 				</Container>
 				<canvas id="canvas" />
-				<Container>
-					
-				</Container>
 			</section>
 		);
 	}

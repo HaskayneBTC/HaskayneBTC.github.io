@@ -18,7 +18,7 @@ code {
 }
 
 .member-img {
-	width: 200;
-	height: 240;
-	object-fit: "cover";
+	width: 200px;
+	height: 240px;
+	object-fit: cover;
 }

@@ -10,7 +10,7 @@ class Bios extends Component {
 				name: "Minnie Thai",
 				titles: ["Co-President"],
 				img:
-					"https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/27073279_10156155946672769_8830866854187591661_n.jpg?_nc_cat=110&_nc_ht=scontent-sea1-1.xx&oh=ce4ab90fd2cba34062e09fbe563e5819&oe=5D326590",
+					"https://scontent.fyyc3-1.fna.fbcdn.net/v/t1.0-9/27073279_10156155946672769_8830866854187591661_n.jpg?_nc_cat=110&_nc_oc=AQmv41dTt9GJzLpxmsbBACyWhBong0n3v05QLCc3Z086zZ35MpNuLuCUiaGlyzy2b7s&_nc_ht=scontent.fyyc3-1.fna&oh=8099bdbafae73f6f105c686b8d1eb59f&oe=5DD09990",
 				text:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 			},

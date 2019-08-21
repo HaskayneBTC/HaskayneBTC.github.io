@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import Home from "./home.jsx";
 import Projects from "./projects.jsx";
-import Bios from "./bios.jsx";
 import Sponsors from "./sponsors.jsx";
+import Team from "./team.jsx";
 
 class Content extends Component {
 	state = {};
 	render() {
+		const { members } = this.props;
 		return (
 			<div id="content" className="container">
 				<Home />
 				<Projects />
-				<Bios />
+				<Team members={members} />
 				<Sponsors />
 			</div>
 		);

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import TeamMember from "./teamMember.jsx";
-import SectionTitle from "../../utils/sectionTitle.jsx";
-import Subsection from "../../utils/subsection.jsx";
+import SectionTitle from "./utils/sectionTitle.jsx";
+import Subsection from "./utils/subsection.jsx";
 
-class OrganizationTeam extends Component {
+class Team extends Component {
 	render() {
 		return (
 			<section id="team">

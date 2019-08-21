@@ -1,23 +1,25 @@
 import React, { Component } from "react";
-import OrganizationTeam from "./organizationTeam.jsx";
+import Team from "./team.jsx";
 import ContactUs from "./contactUs.jsx";
 import Page from "../../utils/page.jsx";
 
 class Organization extends Component {
 	render() {
 		const {
-			organizationTeam,
-			contactUs,
+			team,
+			contactUs
 		} = this.props.data.organizationPage;
 
 		return (
 			<Page navLinks={this.props.navLinks}>
-				<OrganizationTeam
-					teamMembers={organizationTeam.teamMembers}
-					roles={organizationTeam.roles}
+				<Team
+					teamMembers={team.teamMembers}
+					roles={team.roles}
 				/>
-				<ContactUs contacts={contactUs.contacts}
-				roles={contactUs.roles} />
+				<ContactUs
+					contacts={contactUs.contacts}
+					roles={contactUs.roles}
+				/>
 			</Page>
 		);
 	}

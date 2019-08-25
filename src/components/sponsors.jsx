@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sponsor from "./sponsor";
-import SectionTitle from "./sectionTitle";
+import SectionTitle from "./utils/sectionTitle";
 
 class Sponsors extends Component {
 	state = {

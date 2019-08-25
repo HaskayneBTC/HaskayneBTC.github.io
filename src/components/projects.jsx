@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Project from "./project";
-import SectionTitle from "./sectionTitle.jsx";
+import SectionTitle from "./utils/sectionTitle.jsx";
 
 class Projects extends Component {
 	state = {

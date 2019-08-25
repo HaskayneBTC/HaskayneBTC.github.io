@@ -7,7 +7,7 @@ class Team extends Component {
 	render() {
 		return (
 			<section id="team">
-				<SectionTitle title="Team" noWhitespaceBefore />
+				<SectionTitle title="Meet the Team" />
 				<Subsection>
 					<div className="row justify-content-md-center">
 						{this.renderMembers(this.props.members)}

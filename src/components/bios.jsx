@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Bio from "./bio.jsx";
-import SectionTitle from "./sectionTitle.jsx";
+import SectionTitle from "./utils/sectionTitle.jsx";
 
 class Bios extends Component {
 	state = {

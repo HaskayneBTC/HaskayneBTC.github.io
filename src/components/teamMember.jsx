@@ -29,6 +29,11 @@ class TeamMember extends Component {
 	 */
 	renderRoles(roles) {
 		return roles.join(", ");
+
+		// Alternative version for use if a role includes HTML in it
+		// return roles.reduce((accu, role) => {
+		// 	return accu === null ? [role] : [...accu, ", ", role];
+		// }, null);
 	}
 }
 

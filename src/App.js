@@ -16,7 +16,7 @@ class App extends Component {
 				{
 					id: 2,
 					name: "Justin La",
-					roles: ["Co-President"],
+					roles: ["Co-president"],
 					img:
 						"https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/12813913_10204281807284067_7877006205315663152_n.jpg?_nc_cat=100&_nc_ht=scontent-sea1-1.xx&oh=0a102b9a053ef3b02cf4ae9650619b4f&oe=5D67D047"
 				},

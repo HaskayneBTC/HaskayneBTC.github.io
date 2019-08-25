@@ -23,7 +23,7 @@ class NavBar extends Component {
 	};
 	render() {
 		return (
-			<nav className="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+			<nav className="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
 				<ul className="navbar-nav">{this.renderNavLinks()}</ul>
 			</nav>
 		);

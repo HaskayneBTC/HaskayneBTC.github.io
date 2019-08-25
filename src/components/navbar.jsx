@@ -12,7 +12,7 @@ class NavBar extends Component {
 				text: "Projects"
 			},
 			{
-				id: "bios",
+				id: "team",
 				text: "Meet the Team"
 			},
 			{
@@ -23,11 +23,7 @@ class NavBar extends Component {
 	};
 	render() {
 		return (
-			// FIXME delete commented code
-			// <Navbar bg="dark" expand="lg" sticky="top" variant="dark">
-			// 	<Nav>{this.renderNavLinks()}</Nav>
-			// </Navbar>
-			<nav className="navbar navbar-dark bg-dark expand-lg sticky-top">
+			<nav className="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
 				<ul className="navbar-nav">{this.renderNavLinks()}</ul>
 			</nav>
 		);
@@ -35,10 +31,6 @@ class NavBar extends Component {
 
 	renderNavLinks() {
 		return this.state.navLinks.map(l => (
-			// FIXME delete commented code
-			// <Nav.Link key={l.id} href={"#" + l.id}>
-			// 	{l.text}
-			// </Nav.Link>
 			<li className="nav-item" key={l.id}>
 				<a className="nav-link" href={"#" + l.id}>
 					{l.text}

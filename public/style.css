@@ -71,3 +71,8 @@ code {
 	height: 240px;
 	object-fit: cover;
 }
+
+.sponsor-img {
+	height: 100px;
+	width: auto;
+}

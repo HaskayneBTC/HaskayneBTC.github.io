@@ -19,7 +19,7 @@ class Team extends Component {
 
 	renderMembers(members) {
 		return members.map(member => (
-			<div key={member.id} className="col-md-4">
+			<div key={member.name} className="col-md-4">
 				<TeamMember
 					name={member.name}
 					img={member.img}

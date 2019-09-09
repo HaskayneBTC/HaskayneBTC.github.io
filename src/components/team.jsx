@@ -9,12 +9,23 @@ class Team extends Component {
 			<section id="team">
 				<SectionTitle title="Meet the Team" />
 				<Subsection>
-					<div className="row justify-content-md-center">
-						{this.renderMembers(this.props.members)}
-					</div>
+					{this.renderMemberGroups(this.props.team)}
 				</Subsection>
 			</section>
 		);
+	}
+
+	renderMemberGroups(memberGroups) {
+		return memberGroups.map((memberGroup, index) => (
+			<React.Fragment key={index}>
+				{memberGroup.title && (
+					<h3 className="mb-3">{memberGroup.title}</h3>
+				)}
+				<div className="row justify-content-md-center">
+					{this.renderMembers(memberGroup.members)}
+				</div>
+			</React.Fragment>
+		));
 	}
 
 	renderMembers(members) {

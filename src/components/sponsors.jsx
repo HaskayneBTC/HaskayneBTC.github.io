@@ -34,6 +34,11 @@ class Sponsors extends Component {
 						link: "https://www.ucalgary.ca/"
 					}
 				]
+			},
+			{
+				level: "General",
+				imgHeight: 75,
+				sponsors: []
 			}
 		]
 	};
@@ -46,20 +51,14 @@ class Sponsors extends Component {
 		);
 	}
 
-	// renderSponsors(tier, height = 100) {
-	// 	const { sponsors } = this.state;
-	// 	if (sponsors.length === 0) {
-	// 		return <h5 className="text-muted">Become a sponsor today!</h5>;
-	// 	}
-
-	// 	return this.state.sponsors.map(s => (
-	// 		<Sponsor sponsor={s} height={imgHeight} />
-	// 	));
-	// }
-
 	renderSponsorLevels(sponsorLevels) {
 		return sponsorLevels.map(sponsorLevel => {
 			const { level, imgHeight, sponsors } = sponsorLevel;
+
+			// Return nothing if this sponsor level has no sponsors
+			if (!sponsors || !sponsors.length) {
+				return null;
+			}
 
 			return (
 				<div key={level} className="mb-3">

@@ -23,12 +23,17 @@ class NavBar extends Component {
 	};
 	render() {
 		return (
-			<nav className="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
-				<a class="navbar-brand mb-0 h1" href="#">
-					BTC
+			<nav className="navbar navbar-dark bg-dark navbar-expand-md sticky-top btc-bg-grey">
+				<a className="navbar-brand mb-0 h1" href="#">
+					<img
+						src="images/btcLogoGrey.png"
+						width={30}
+						height={30}
+						alt="Business Technology Club"
+					/>
 				</a>
 				<button
-					class="navbar-toggler"
+					className="navbar-toggler"
 					type="button"
 					data-toggle="collapse"
 					data-target="#navbarSupportedContent"
@@ -36,10 +41,10 @@ class NavBar extends Component {
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div
-					class="collapse navbar-collapse"
+					className="collapse navbar-collapse"
 					id="navbarSupportedContent"
 				>
 					<ul className="navbar-nav">{this.renderNavLinks()}</ul>

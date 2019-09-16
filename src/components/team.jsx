@@ -7,7 +7,7 @@ class Team extends Component {
 	render() {
 		return (
 			<section id="team">
-				<SectionTitle title="Meet the Team" />
+				<SectionTitle title="the Team" />
 				<Subsection>
 					{this.renderMemberGroups(this.props.team)}
 				</Subsection>

@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 import Sponsor from "./sponsor";
 import SectionTitle from "./utils/sectionTitle";
+import Subsection from "./utils/subsection";
 
 class Sponsors extends Component {
 	render() {
 		return (
 			<section id="sponsors">
 				<SectionTitle title="Sponsors" />
-				{this.renderSponsorLevels(this.props.sponsorLevels)}
+				<div className="mb-5">
+					{this.renderSponsorLevels(this.props.sponsorLevels)}
+				</div>
+				<Subsection>{this.renderSponsorUs()}</Subsection>
 			</section>
 		);
 	}
@@ -40,6 +44,27 @@ class Sponsors extends Component {
 			<div key={name} className="col-md-4">
 				<Sponsor img={img} link={link} imgHeight={imgHeight} />
 			</div>
+		);
+	}
+
+	renderSponsorUs() {
+		return (
+			<React.Fragment>
+				<br />
+				<br />
+				<p className="text-muted">
+					Interested in having your company's logo displayed on our
+					page, speaking at our events, and supporting us? You can
+					sponsor us, starting at $200.
+					<br />
+					Contact us at haskayneBTC
+					<span style={{ display: "none" }}>
+						You found our easter egg! Interested in websites? Join
+						BTC!
+					</span>
+					@gmail<span>.com</span>
+				</p>
+			</React.Fragment>
 		);
 	}
 }

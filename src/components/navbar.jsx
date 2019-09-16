@@ -13,7 +13,7 @@ class NavBar extends Component {
 			},
 			{
 				id: "team",
-				text: "Meet the Team"
+				text: "The Team"
 			},
 			{
 				id: "sponsors",

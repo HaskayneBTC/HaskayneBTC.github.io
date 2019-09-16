@@ -7,13 +7,13 @@ import Team from "./team.jsx";
 class Content extends Component {
 	state = {};
 	render() {
-		const { team } = this.props;
+		const { team, sponsorLevels } = this.props;
 		return (
 			<div id="content" className="container">
 				<Home />
 				<Projects />
 				<Team team={team} />
-				<Sponsors />
+				<Sponsors sponsorLevels={sponsorLevels} />
 			</div>
 		);
 	}

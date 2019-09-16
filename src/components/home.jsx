@@ -35,7 +35,7 @@ class Home extends Component {
 						<div className="col-md-6">
 							<img
 								src="https://cdn1.analytics.hbs.edu/content/0e06dff0f9384e3fba3e332ac40100df/BizAnalytics_vs_Intelligence-Hero.jpg"
-								class="img-cover-lg"
+								className="img-cover-lg"
 								alt="Business Analytics"
 							/>
 						</div>

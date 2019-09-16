@@ -60,12 +60,18 @@ class Projects extends Component {
 			// Add responsive breaks for cards
 			if (index % 2 === 1) {
 				projectEntry.push(
-					<div class="w-100 d-none d-sm-block d-md-none" />
+					<div
+						key={"break2-" + index}
+						className="w-100 d-none d-sm-block d-md-none"
+					/>
 				);
 			}
 			if (index % 3 === 2) {
 				projectEntry.push(
-					<div class="w-100 d-none d-md-block d-lg-block d-xl-block" />
+					<div
+						key={"break3-" + index}
+						className="w-100 d-none d-md-block d-lg-block d-xl-block"
+					/>
 				);
 			}
 

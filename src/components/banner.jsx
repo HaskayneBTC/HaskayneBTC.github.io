@@ -4,9 +4,8 @@ class Banner extends Component {
 	state = {};
 
 	render() {
-		// const imgUrl = "images/background1.png";
-		const imgUrl =
-			"https://onaircode.com/wp-content/uploads/2017/11/Particle-and-Node-Canvas.jpg";
+		const imgUrl = "images/background1.jpg";
+		// const imgUrl = "https://onaircode.com/wp-content/uploads/2017/11/Particle-and-Node-Canvas.jpg";
 		const heroStyle = {
 			maxWidth: "100%",
 			maxHeight: "20vh"

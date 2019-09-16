@@ -17,7 +17,9 @@ class Project extends Component {
 					alt=""
 				/>
 				<div className="card-body">
-					<h5 className="card-title">{this.props.project.title}</h5>
+					<h4 className="card-title mb-1">
+						{this.props.project.title}
+					</h4>
 					<p className="card-text">{this.props.project.text}</p>
 				</div>
 			</div>

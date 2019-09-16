@@ -13,7 +13,7 @@ class TeamMember extends Component {
 				/>
 				<br />
 				<div className="text-center">
-					<h5>{name}</h5>
+					<h4 className="mb-1">{name}</h4>
 					<p className="text-muted">{this.renderRoles(roles)}</p>
 					{/* Extra vertical padding */}
 					<br />

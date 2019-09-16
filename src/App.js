@@ -79,7 +79,7 @@ class App extends Component {
 							name: "Gordon West",
 							roles: ["Junior Executive"],
 							img:
-								"https://media.licdn.com/dms/image/C5603AQHN8OrYXwHAOQ/profile-displayphoto-shrink_800_800/0?e=1573689600&v=beta&t=0nf0f1zKT_to1DcKURZemX89mUMY9_UZi26vTmkfpGw"
+								"https://media.licdn.com/dms/image/C5603AQGNlVQxAqEdQg/profile-displayphoto-shrink_800_800/0?e=1574294400&v=beta&t=Hyun_VC3dADQKLSKtWLNxNBm1nFOCoYnqAnAQefcH60"
 						}
 					]
 				}

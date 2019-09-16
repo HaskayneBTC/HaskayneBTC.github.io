@@ -6,6 +6,44 @@ import Content from "./components/content.jsx";
 class App extends Component {
 	state = {
 		content: {
+			projects: [
+				{
+					title: "Project 1",
+					img:
+						"https://www.corporatecomplianceinsights.com/wp-content/uploads/2018/09/data-analytics.jpg",
+					text: "A brief blurb about what this is"
+				},
+				{
+					title: "Project 2",
+					img:
+						"http://boc.ie/clipart/post/i-0207b%20refinery%20-%20night.jpg",
+					text: "A brief blurb about what this is"
+				},
+				{
+					title: "Project 3",
+					img:
+						"https://www.entrepreneurship-campus.org/wp-content/uploads/2016/06/weather-balloon4.jpg",
+					text: "A brief blurb about what this is"
+				},
+				{
+					title: "Project 4",
+					img:
+						"https://www.todocanada.ca/wp-content/uploads/eveningincalgary-e1459307181708.jpg",
+					text: "A brief blurb about what this is"
+				},
+				{
+					title: "Project 5",
+					img:
+						"http://boc.ie/clipart/post/i-0207b%20refinery%20-%20night.jpg",
+					text: "A brief blurb about what this is"
+				},
+				{
+					title: "Project 6",
+					img:
+						"http://boc.ie/clipart/post/i-0207b%20refinery%20-%20night.jpg",
+					text: "A brief blurb about what this is"
+				}
+			],
 			team: [
 				{
 					title: "Co-Presidents",

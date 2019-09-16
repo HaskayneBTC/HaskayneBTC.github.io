@@ -14,6 +14,7 @@ class Project extends Component {
 					className="card-img-top"
 					src={this.props.project.img}
 					style={cardImgStyle}
+					alt=""
 				/>
 				<div className="card-body">
 					<h5 className="card-title">{this.props.project.title}</h5>

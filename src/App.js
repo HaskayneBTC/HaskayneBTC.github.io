@@ -112,12 +112,6 @@ class App extends Component {
 							roles: ["Junior Executive", "Web Designer"],
 							img:
 								"https://media.licdn.com/dms/image/C4D03AQEMtWAmqAebAQ/profile-displayphoto-shrink_200_200/0?e=1573084800&v=beta&t=tP8ciLM053nI2iviRKy5ASg9u4ZE_FgtyaYpg4ZQN8M"
-						},
-						{
-							name: "Gordon West",
-							roles: ["Junior Executive"],
-							img:
-								"https://media.licdn.com/dms/image/C5603AQGNlVQxAqEdQg/profile-displayphoto-shrink_800_800/0?e=1574294400&v=beta&t=Hyun_VC3dADQKLSKtWLNxNBm1nFOCoYnqAnAQefcH60"
 						}
 					]
 				}

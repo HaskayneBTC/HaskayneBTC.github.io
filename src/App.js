@@ -51,8 +51,7 @@ class App extends Component {
 						{
 							name: "Justin La",
 							roles: ["Co-President"],
-							img:
-								"https://media.licdn.com/dms/image/C4D03AQFvS8Iz9Kei5w/profile-displayphoto-shrink_800_800/0?e=1573689600&v=beta&t=smSvz0NRignevlLajEpfdT5Os7zMxNBa7ylY-r69JmA"
+							img: "images/justin.jpeg"
 						},
 						{
 							name: "Minnie Thai",
@@ -68,8 +67,7 @@ class App extends Component {
 						{
 							name: "Arjie Arcos",
 							roles: ["VP Marketing"],
-							img:
-								"https://scontent.fyyc3-1.fna.fbcdn.net/v/t1.0-9/70606338_1225165244321655_2178907282299944960_n.jpg?_nc_cat=107&_nc_oc=AQli_TTUPqWU0_sz4FrMZNKi3opQ6clJpqSB169NtGNxHpYyb0zsw44vgqt5nDz--yo&_nc_ht=scontent.fyyc3-1.fna&oh=6075811d80c1958a340d68a350248db0&oe=5E112F73"
+							img: "images/arjie.jpeg"
 						},
 						{
 							name: "Sarah LaFramboise",
@@ -86,8 +84,7 @@ class App extends Component {
 						{
 							name: "Leslie Nguyen",
 							roles: ["VP Events"],
-							img:
-								"https://media.licdn.com/dms/image/C5603AQGY_CWR1AHWkw/profile-displayphoto-shrink_800_800/0?e=1573689600&v=beta&t=gMXrfrV4KcIez3ZYDqXfcjV4fAhiJAst9tlK8ZF3z6k"
+							img: "images/leslie.jpeg"
 						},
 
 						{
@@ -104,14 +101,12 @@ class App extends Component {
 						{
 							name: "Kareen Hallak",
 							roles: ["Junior Executive"],
-							img:
-								"https://media.licdn.com/dms/image/C4D03AQHfqTiUWDeDbw/profile-displayphoto-shrink_800_800/0?e=1573084800&v=beta&t=Vc787MLlM724V5aAzhnQD7vEahiY3Qudk9GkDzNCWCY"
+							img: "images/kareen.jpeg"
 						},
 						{
 							name: "Richard Lee",
 							roles: ["Junior Executive", "Web Designer"],
-							img:
-								"https://media.licdn.com/dms/image/C4D03AQEMtWAmqAebAQ/profile-displayphoto-shrink_200_200/0?e=1573084800&v=beta&t=tP8ciLM053nI2iviRKy5ASg9u4ZE_FgtyaYpg4ZQN8M"
+							img: "images/richard.jpeg"
 						}
 					]
 				}

@@ -56,7 +56,11 @@ class NavBar extends Component {
 	renderNavLinks() {
 		return this.state.navLinks.map(l => (
 			<li className="nav-item" key={l.id}>
-				<a className="nav-link" href={"#" + l.id}>
+				<a
+					className="nav-link"
+					href={"#" + l.id}
+					style={{ fontFamily: "bebas_neue" }}
+				>
 					{l.text}
 				</a>
 			</li>

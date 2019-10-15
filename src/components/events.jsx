@@ -1,26 +1,26 @@
 import React, { Component } from "react";
-import Project from "./project";
+import Event from "./event";
 import SectionTitle from "./utils/sectionTitle.jsx";
 
-class Projects extends Component {
+class Events extends Component {
 	render() {
 		return (
-			<section id="projects">
-				<SectionTitle title="Projects" />
+			<section id="events">
+				<SectionTitle title="Events" />
 				<div className="card-deck">
-					{this.renderProjects(this.props.projects)}
+					{this.renderEvents(this.props.events)}
 				</div>
 			</section>
 		);
 	}
 
-	renderProjects(projects) {
-		return projects.flatMap((p, index) => {
-			let projectEntry = [<Project key={p.title} {...p} />];
+	renderEvents(events) {
+		return events.flatMap((event, index) => {
+			let eventEntry = [<Event key={event.title} {...event} />];
 
 			// Add responsive breaks for cards
 			if (index % 2 === 1) {
-				projectEntry.push(
+				eventEntry.push(
 					<div
 						key={"break2-" + index}
 						className="w-100 d-none d-sm-block d-md-none"
@@ -29,7 +29,7 @@ class Projects extends Component {
 			}
 
 			if (index % 3 === 2) {
-				projectEntry.push(
+				eventEntry.push(
 					<div
 						key={"break3-" + index}
 						className="w-100 d-none d-md-block d-lg-block d-xl-block"
@@ -37,9 +37,9 @@ class Projects extends Component {
 				);
 			}
 
-			return projectEntry;
+			return eventEntry;
 		});
 	}
 }
 
-export default Projects;
+export default Events;

@@ -6,8 +6,10 @@ import Content from "./components/content.jsx";
 
 class App extends Component {
 	state = {
-		googleSheetsUrl: "https://script.google.com/macros/s/AKfycbwpUHnD1aE6Y7D_v06S2O27Crt_Y6Pq3-3X5v6iAVtSlVhksHY/exec",
+		googleSheetsUrl:
+			"https://script.google.com/macros/s/AKfycbwpUHnD1aE6Y7D_v06S2O27Crt_Y6Pq3-3X5v6iAVtSlVhksHY/exec",
 		content: {
+			events: [],
 			projects: [
 				{
 					title: "Project 1",
@@ -158,12 +160,17 @@ class App extends Component {
 
 		$.get(googleSheetsUrl, data => {
 			console.log(data); // FIXME delete
-			const projects = data.content.filter(entry => entry.type.toLowerCase() === "project");
-			const events = data.content.filter(entry => entry.type.toLowerCase() === "event");
-			this.setState({content: {...this.state.content, projects}});
+			const projects = data.content.filter(
+				entry => entry.type.toLowerCase() === "project"
+			);
+			const events = data.content.filter(
+				entry => entry.type.toLowerCase() === "event"
+			);
+			this.setState({
+				content: { ...this.state.content, projects, events }
+			});
 		});
 	}
-
 
 	render() {
 		return (

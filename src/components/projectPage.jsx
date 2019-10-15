@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+// TODO UNUSED! This can be implemented with project.jsx and modalContainer.jsx
+
 class ProjectPage extends Component {
 	state = {};
 	render() {

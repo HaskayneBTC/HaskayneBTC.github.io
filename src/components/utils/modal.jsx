@@ -42,6 +42,7 @@ class Modal extends Component {
 						>
 							{this.renderModalText()}
 						</div>
+						{/*
 						<div className="modal-footer">
 							<button
 								type="button"
@@ -51,6 +52,7 @@ class Modal extends Component {
 								Close
 							</button>
 						</div>
+						*/}
 					</div>
 				</div>
 			</div>
@@ -69,9 +71,13 @@ class Modal extends Component {
 		// Add subtitle if applicable
 		if (subtitle) {
 			output.push(
-				<h4 style={{ fontFamily: "libra_serif_modern" }}>{subtitle}</h4>
+				<h5
+					className="text-muted"
+					style={{ fontFamily: "libra_serif_modern" }}
+				>
+					{subtitle}
+				</h5>
 			);
-			// output.push(<br />);
 		}
 
 		// Split text by line breaks

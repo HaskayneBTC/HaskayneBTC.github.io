@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ModalContainer from "./utils/modalContainer";
 
-class Project extends Component {
+class Event extends Component {
 	render() {
 		const { title, text, subtitle, img } = this.props;
 
@@ -39,4 +39,4 @@ class Project extends Component {
 	}
 }
 
-export default Project;
+export default Event;

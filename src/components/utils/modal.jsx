@@ -7,22 +7,25 @@ class Modal extends Component {
 		$(this.modal).modal("show");
 
 		if (this.props.handleHideModal) {
-			$(this.modal).on(
-				"hidden.bs.modal",
-				this.props.handleHideModal
-			);
+			$(this.modal).on("hidden.bs.modal", this.props.handleHideModal);
 		}
 	}
 
 	render() {
+		const { title } = this.props;
 		return (
-			<div ref={el => {this.modal = el}} className="modal" tabIndex={-1} role="dialog">
+			<div
+				ref={el => {
+					this.modal = el;
+				}}
+				className="modal"
+				tabIndex={-1}
+				role="dialog"
+			>
 				<div className="modal-dialog" role="document">
 					<div className="modal-content">
 						<div className="modal-header">
-							<h5 className="modal-title">
-								!!! FIXME Project title here
-							</h5>
+							<h4 className="modal-title">{title}</h4>
 							<button
 								type="button"
 								className="close"
@@ -32,8 +35,12 @@ class Modal extends Component {
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<div className="modal-body">
-							<p>FIXME Project description goes here</p>
+						{this.renderModalImg()}
+						<div
+							className="modal-body"
+							style={{ fontFamily: "libra_serif_modern" }}
+						>
+							{this.renderModalText()}
 						</div>
 						<div className="modal-footer">
 							<button
@@ -48,6 +55,31 @@ class Modal extends Component {
 				</div>
 			</div>
 		);
+	}
+
+	renderModalImg() {
+		const { img } = this.props;
+		return img ? <img src={img} className="img-cover-md" alt="" /> : null;
+	}
+
+	renderModalText() {
+		const { subtitle, text } = this.props;
+		let output = [];
+
+		// Add subtitle if applicable
+		if (subtitle) {
+			output.push(
+				<h4 style={{ fontFamily: "libra_serif_modern" }}>{subtitle}</h4>
+			);
+			// output.push(<br />);
+		}
+
+		// Split text by line breaks
+		const lines = text.split("\n").map(line => <p>{line}</p>);
+
+		output.push(<>{lines}</>);
+
+		return output;
 	}
 }
 

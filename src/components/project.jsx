@@ -1,22 +1,10 @@
 import React, { Component } from "react";
-import Modal from "./utils/modal"
+import ModalContainer from "./utils/modalContainer";
 
 class Project extends Component {
-	state = {
-		view: {
-			showModal: false
-		}
-	};
-
-	handleShowModal = () => {
-		this.setState({view: {showModal: true}});
-	}
-
-	handleHideModal = () => {
-		this.setState({view: {showModal: false}});
-	}
-
 	render() {
+		const { title, text, subtitle, img } = this.props.project;
+
 		const cardImgStyle = {
 			width: "100%",
 			height: "15vw",
@@ -24,23 +12,29 @@ class Project extends Component {
 		};
 
 		return (
-			<React.Fragment>
-				<div className="card mb-4 border-0" onClick={this.handleShowModal}>
-					<img
-						className="card-img-top"
-						src={this.props.project.img}
-						style={cardImgStyle}
-						alt=""
-					/>
-					<div className="card-body">
-						<h4 className="card-title mb-1">
-							{this.props.project.title}
-						</h4>
-						<p className="card-text">{this.props.project.shortText}</p>
+			<ModalContainer
+				modal={{
+					title: title,
+					text: text,
+					img: img,
+					subtitle: subtitle
+				}}
+			>
+				{onShowModal => (
+					<div className="card mb-4 border-0" onClick={onShowModal}>
+						<img
+							className="card-img-top"
+							src={img}
+							style={cardImgStyle}
+							alt=""
+						/>
+						<div className="card-body">
+							<h4 className="card-title mb-1">{title}</h4>
+							<p className="card-text">{subtitle}</p>
+						</div>
 					</div>
-				</div>
-				{this.state.view.showModal && <Modal handleHideModal={this.handleHideModal} />}
-			</React.Fragment>
+				)}
+			</ModalContainer>
 		);
 	}
 }

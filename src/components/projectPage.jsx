@@ -3,14 +3,14 @@ import React, { Component } from "react";
 class ProjectPage extends Component {
 	state = {};
 	render() {
-		const { title, description, registration } = this.props;
+		const { title, text, registration } = this.props;
 
 		return (
 			<div>
 				<div className="container-fluid" />
 				<div>
 					<h1>{title}</h1>
-					<p>{description}</p>
+					<p>{text}</p>
 					<br />
 					{this.renderRegisterButton(registration)}
 				</div>

@@ -1,35 +1,46 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import SectionTitle from "./utils/sectionTitle";
 
 class Home extends Component {
 	state = {};
 	render() {
 		return (
 			<section id="home">
-				<br />
-				<br />
-				<br />
-				<Container>
-					<Row>
-						<Col md={5}>
-							<h1 className="display-4">
-								Connecting Innovation With People
-							</h1>
-							<p className="text-muted">
-								Fill me in! A little more about who we are...
-							</p>
-						</Col>
-						<Col id="animation-col" md={7}>
-							<canvas id="canvas" />
-						</Col>
-					</Row>
-				</Container>
-				<canvas id="canvas" />
-				<Container>
-					
-				</Container>
+				{/* Using blank SectionTitle to control space formatting */}
+				<SectionTitle />
+				<div className="container">
+					<h1 className="display-4">Our Vision</h1>
+					<p className="splash-text text-muted">
+						<em>
+							To be at the forefront of cultivating talented
+							Business Technology students through experience and
+							professional growth.
+						</em>
+					</p>
+					<br />
+					<br />
+					<h1 className="display-4">Our Mission</h1>
+					<div className="row">
+						<div className="col-md">
+							<blockquote className="blockquote text-muted my-2">
+								The Haskayne Business Technology Club aims to
+								enhance the learning experience of undergraduate
+								students through real-life assignments that
+								exploit information technology to solve business
+								problems, and through facilitating networking
+								events with like-minded students and business
+								professionals in these fields.
+							</blockquote>
+						</div>
+						<div className="col-md-6">
+							<img
+								src="https://cdn1.analytics.hbs.edu/content/0e06dff0f9384e3fba3e332ac40100df/BizAnalytics_vs_Intelligence-Hero.jpg"
+								className="img-cover-lg"
+								alt="Business Analytics"
+							/>
+						</div>
+					</div>
+				</div>
 			</section>
 		);
 	}

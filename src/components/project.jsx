@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import Card from "react-bootstrap/Card";
+import ModalContainer from "./utils/modalContainer";
 
 class Project extends Component {
 	render() {
+		const { title, text, subtitle, img } = this.props;
+
 		const cardImgStyle = {
 			width: "100%",
 			height: "15vw",
@@ -10,22 +12,29 @@ class Project extends Component {
 		};
 
 		return (
-			<Card border="0" className="mb-4">
-				<Card.Img
-					variant="top"
-					src={this.props.project.img}
-					style={cardImgStyle}
-				/>
-				<Card.Body>
-					<Card.Title>{this.props.project.title}</Card.Title>
-					<Card.Text>{this.props.project.text}</Card.Text>
-				</Card.Body>
-				<Card.Footer>
-					<small className="text-muted">
-						Last updated 3 mins ago
-					</small>
-				</Card.Footer>
-			</Card>
+			<ModalContainer
+				modal={{
+					title: title,
+					text: text,
+					img: img,
+					subtitle: subtitle
+				}}
+			>
+				{onShowModal => (
+					<div className="card mb-4 border-0" onClick={onShowModal}>
+						<img
+							className="card-img-top"
+							src={img}
+							style={cardImgStyle}
+							alt=""
+						/>
+						<div className="card-body">
+							<h4 className="card-title mb-1">{title}</h4>
+							<p className="card-text">{subtitle}</p>
+						</div>
+					</div>
+				)}
+			</ModalContainer>
 		);
 	}
 }

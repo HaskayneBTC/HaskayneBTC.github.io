@@ -116,28 +116,22 @@ class App extends Component {
 				}
 			],
 			sponsorLevels: [
-				{
-					level: "Gold",
-					imgHeight: 150,
-					sponsors: [
-						{
-							name: "Haskayne School of Business",
-							img:
-								"https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Haskayne_School_of_Business.svg/375px-Haskayne_School_of_Business.svg.png",
-							link: "http://haskayne.ucalgary.ca"
-						}
-					]
-				},
+				// {
+				// 	level: "Gold",
+				// 	imgHeight: 150,
+				// 	sponsors: [
+				// 		{
+				// 			name: "Nutrien",
+				// 			img:
+				// 				"https://mms.businesswire.com/media/20190206005770/en/699432/23/Nutrien_logo.jpg",
+				// 			link: "https://www.nutrien.com/"
+				// 		}
+				// 	]
+				// },
 				{
 					level: "Silver",
 					imgHeight: 100,
 					sponsors: [
-						{
-							name: "Schulich School of Engineering",
-							img:
-								"https://upload.wikimedia.org/wikipedia/en/3/3f/Schulich.png",
-							link: "http://schulich.ucalgary.ca"
-						},
 						{
 							name: "University of Calgary",
 							img:
